@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0B1B3A">
+  <title>Frequently Asked Questions | NexOS</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #08152e;
+      color: #ffffff;
+    }
+
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #203b60;
+      background: #0b1b3a;
+    }
+
+    header a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    header span {
+      color: #35aaff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 65px 20px 45px;
+    }
+
+    .hero small {
+      color: #39aaff;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin: 15px 0;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #aabbd3;
+      line-height: 1.8;
+    }
+
+    .faq-container {
+      max-width: 850px;
+      margin: 0 auto 80px;
+      padding: 0 22px;
+    }
+
+    .faq-item {
+      background: #102342;
+      border: 1px solid #243e62;
+      border-radius: 14px;
+      padding: 25px;
+      margin-bottom: 16px;
+    }
+
+    .faq-item h2 {
+      font-size: 18px;
+      margin: 0 0 12px;
+      color: #ffffff;
+    }
+
+    .faq-item p {
+      color: #b4c5dc;
+      font-size: 14px;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    .status {
+      display: inline-block;
+      margin-top: 13px;
+      color: #ffd27a;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .notice {
+      max-width: 850px;
+      margin: 0 auto 60px;
+      padding: 25px;
+      background: #132b4c;
+      border: 1px solid #2b527e;
+      border-radius: 14px;
+    }
+
+    .notice strong {
+      color: #58baff;
+    }
+
+    .notice p {
+      color: #b4c5dc;
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid #203b60;
+      color: #8196b2;
+      font-size: 13px;
+    }
+
+    footer a {
+      color: #58baff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="/">Nex<span>OS</span></a>
+  </header>
+
+  <section class="hero">
+    <small>NEXOS HELP CENTER</small>
+    <h1>Frequently Asked Questions</h1>
+    <p>
+      Find answers about NexOS, planned hardware support,
+      application compatibility, development, and future releases.
+    </p>
+  </section>
+
+  <main class="faq-container">
+
+    <article class="faq-item">
+      <h2>01. What is NexOS?</h2>
+      <p>
+        NexOS is an operating system project planned around
+        the ChromiumOS foundation. Its goal is to provide a
+        modern desktop experience with web applications,
+        Linux tools, and additional application compatibility.
+      </p>
+      <span class="status">PROJECT IN DEVELOPMENT</span>
+    </article>
+
+    <article class="faq-item">
+      <h2>02. Which devices will NexOS support?</h2>
+      <p>
+        Planned hardware targets include selected Intel,
+        AMD, NVIDIA-based, and ARM systems, as well as
+        virtual machines and single-board computers such
+        as Raspberry Pi and Orange Pi. Compatibility
+        will depend on testing and available drivers.
+      </p>
+      <span class="status">HARDWARE SUPPORT PLANNED</span>
+    </article>
+
+    <article class="faq-item">
+      <h2>03. Will NexOS support Linux applications?</h2>
+      <p>
+        Linux application support is planned. The project
+        aims to provide compatibility with selected Linux
+        tools and development applications. This feature
+        is not available yet.
+      </p>
+      <span class="status">PLANNED FEATURE</span>
+    </article>
+
+    <article class="faq-item">
+      <h2>04. Will NexOS support Android applications?</h2>
+      <p>
+        Android application compatibility is a development
+        goal. Availability will depend on the chosen
+        implementation, hardware, and testing.
+      </p>
+      <span class="status">PLANNED FEATURE</span>
+    </article>
+
+    <article class="faq-item">
+      <h2>05. Will NexOS support Windows applications?</h2>
+      <p>
+        The project plans to investigate compatibility
+        technologies such as Wine and Proton for selected
+        Windows applications and games. This does not mean
+        native Windows application support, and compatibility
+        is not currently available.
+      </p>
+      <span class="status">PLANNED FEATURE</span>
+    </article>
+
+    <article class="faq-item">
+      <h2>06. When will NexOS be available to download?</h2>
+      <p>
+        NexOS does not have a public installation release
+        yet. Installation images will be published after
+        development, hardware testing, and release preparation
+        are complete.
+      </p>
+      <span class="status">NO PUBLIC DOWNLOADS YET</span>
+    </article>
+
+    <article class="faq-item">
+      <h2>07. Will NexOS be free?</h2>
+      <p>
+        The project is exploring different editions and
+        distribution options. Some editions may be free,
+        while a planned NexOS For You subscription may
+        offer additional services. Final pricing and
+        licensing details have not been announced.
+      </p>
+      <span class="status">DETAILS NOT FINALIZED</span>
+    </article>
+
+    <article class="faq-item">
+      <h2>08. Can I install NexOS on my computer today?</h2>
+      <p>
+        Not yet. NexOS is under development and no public,
+        bootable installation image is currently available.
+        Please do not erase or modify your computer's
+        existing operating system expecting to install NexOS.
+      </p>
+      <span class="status">INSTALLATION NOT AVAILABLE</span>
+    </article>
+
+    <article class="faq-item">
+      <h2>09. How can I follow NexOS development?</h2>
+      <p>
+        Visit the NexOS website and its Release Notes and
+        Developer Center pages for project information
+        and future development updates.
+      </p>
+      <span class="status">FOLLOW PROJECT UPDATES</span>
+    </article>
+
+    <div class="notice">
+      <strong>Important: NexOS is under development.</strong>
+      <p>
+        All hardware compatibility, application support,
+        and installation features described on this page
+        are planned goals unless explicitly stated otherwise.
+        No public installation downloads are currently available.
+      </p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 NexOS Project. All rights reserved.</p>
+    <p>
+      <a href="/">Home</a> |
+      <a href="/support-center.html">Support Center</a> |
+      <a href="/downloads.html">Downloads</a>
+    </p>
+  </footer>
+
+</body>
+</html>

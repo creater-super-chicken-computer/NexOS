@@ -1,0 +1,222 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0B1B3A">
+  <title>NexOS — Documentation Center</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #08152e;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #20365c;
+    }
+
+    header a {
+      color: #45b8ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 75px 20px 55px;
+      background: linear-gradient(135deg, #102b55, #08152e);
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      margin: 0 0 15px;
+    }
+
+    .hero h1 span {
+      color: #35aaff;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: auto;
+      color: #bdcce4;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 45px 22px;
+    }
+
+    .notice {
+      padding: 20px;
+      margin-bottom: 35px;
+      border: 1px solid #e0a83b;
+      background: #29243a;
+      border-radius: 12px;
+      color: #f5dfad;
+    }
+
+    .docs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .docs-card {
+      padding: 25px;
+      border: 1px solid #263e65;
+      border-radius: 15px;
+      background: #102344;
+    }
+
+    .docs-card h2 {
+      color: #48b7ff;
+      font-size: 21px;
+      margin-top: 0;
+    }
+
+    .docs-card p {
+      color: #c2cee2;
+      font-size: 14px;
+    }
+
+    .status {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 6px 12px;
+      border-radius: 20px;
+      background: #34334a;
+      color: #ffd477;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px 20px;
+      border-top: 1px solid #20365c;
+      color: #91a5c5;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="/">&#8592; Back to NexOS</a>
+  </header>
+
+  <section class="hero">
+    <h1>NexOS <span>Documentation</span></h1>
+    <p>
+      Learn about NexOS, explore planned features,
+      and follow development documentation.
+    </p>
+  </section>
+
+  <main class="container">
+
+    <div class="notice">
+      <strong>Documentation status:</strong>
+      NexOS is under development. Some documentation
+      is planned and will be expanded as features
+      are implemented and tested.
+    </div>
+
+    <div class="docs-grid">
+
+      <article class="docs-card">
+        <h2>Getting Started</h2>
+        <p>
+          Learn about NexOS, its goals, editions,
+          and planned features.
+        </p>
+        <a href="/" style="color: #48b7ff;">
+          Explore NexOS &rarr;
+        </a>
+        <br>
+        <span class="status">Available</span>
+      </article>
+
+      <article class="docs-card">
+        <h2>Installation Documentation</h2>
+        <p>
+          Learn about planned installation steps,
+          system requirements, and setup.
+        </p>
+        <a href="/installation-guide.html" style="color: #48b7ff;">
+          View Installation Guide &rarr;
+        </a>
+        <br>
+        <span class="status">Planned guide</span>
+      </article>
+
+      <article class="docs-card">
+        <h2>Hardware Documentation</h2>
+        <p>
+          Explore planned hardware targets,
+          architectures, and compatibility.
+        </p>
+        <a href="/hardware-compatibility.html" style="color: #48b7ff;">
+          View Hardware Compatibility &rarr;
+        </a>
+        <br>
+        <span class="status">Planned</span>
+      </article>
+
+      <article class="docs-card">
+        <h2>Linux &amp; App Documentation</h2>
+        <p>
+          Learn about planned Linux, Android,
+          Windows compatibility, and web apps.
+        </p>
+        <a href="/app-support.html" style="color: #48b7ff;">
+          View App Support &rarr;
+        </a>
+        <br>
+        <span class="status">Planned</span>
+      </article>
+
+      <article class="docs-card">
+        <h2>System Updates</h2>
+        <p>
+          Explore the planned update process,
+          security fixes, and maintenance releases.
+        </p>
+        <a href="/system-updates.html" style="color: #48b7ff;">
+          View Update Documentation &rarr;
+        </a>
+        <br>
+        <span class="status">Planned</span>
+      </article>
+
+      <article class="docs-card">
+        <h2>Developer Documentation</h2>
+        <p>
+          Follow the planned developer resources,
+          platform architecture, and contribution guides.
+        </p>
+        <span class="status">Coming soon</span>
+      </article>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    NexOS Documentation Center &copy; 2026
+  </footer>
+
+</body>
+</html>

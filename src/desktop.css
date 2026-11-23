@@ -1,0 +1,387 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.desktop {
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  background:
+    radial-gradient(ellipse at 50% 45%, #123e7c 0%, transparent 45%),
+    linear-gradient(135deg, #071326, #0b1d3d 55%, #050d1c);
+}
+
+.desktop.light {
+  color: #14213d;
+  background:
+    radial-gradient(ellipse at 50% 45%, #d5e8ff 0%, transparent 48%),
+    linear-gradient(135deg, #dceaff, #a9c9f2);
+}
+
+.desktop-top {
+  height: 48px;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(5, 12, 28, 0.3);
+  backdrop-filter: blur(15px);
+}
+
+.top-brand,
+.top-status {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 13px;
+}
+
+.top-status {
+  color: #d4e5ff;
+}
+
+.mini-logo {
+  display: inline-grid;
+  place-items: center;
+  width: 29px;
+  height: 29px;
+  border-radius: 9px;
+  color: white;
+  font-weight: 900;
+  background: linear-gradient(135deg, #00d4ff, #075bdf);
+}
+
+.desktop-center {
+  height: calc(100% - 115px);
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.desktop-welcome {
+  margin-top: -25px;
+}
+
+.desktop-logo {
+  width: 105px;
+  height: 105px;
+  margin: 0 auto 22px;
+  border-radius: 30px;
+  display: grid;
+  place-items: center;
+  font-size: 66px;
+  font-weight: 900;
+  color: white;
+  background: linear-gradient(135deg, #00d4ff, #075bdf);
+  box-shadow: 0 15px 55px #006dff55;
+}
+
+.desktop-welcome h1 {
+  font-size: clamp(27px, 5vw, 43px);
+  margin: 0;
+}
+
+.desktop-welcome p {
+  color: #83caff;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+.desktop-date {
+  margin-top: 24px;
+  color: #c5d7f2;
+  font-size: 14px;
+}
+
+.launcher {
+  position: absolute;
+  bottom: 82px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(440px, calc(100% - 30px));
+  padding: 22px;
+  border: 1px solid #ffffff24;
+  border-radius: 22px;
+  background: rgba(9, 20, 42, 0.94);
+  backdrop-filter: blur(25px);
+  box-shadow: 0 20px 70px #0008;
+}
+
+.launcher-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.launcher-heading h2 {
+  font-size: 19px;
+}
+
+.launcher input,
+.browser-bar input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ffffff22;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+  background: #ffffff12;
+}
+
+.launcher input {
+  margin: 8px 0 18px;
+}
+
+.launcher input::placeholder,
+.browser-bar input::placeholder {
+  color: #9aacc8;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.app-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  padding: 15px 5px;
+  border: 0;
+  border-radius: 12px;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+}
+
+.app-item:hover {
+  background: #ffffff16;
+}
+
+.app-item span {
+  font-size: 30px;
+}
+
+.app-item small {
+  font-size: 12px;
+}
+
+.no-apps {
+  color: #aabbd5;
+  text-align: center;
+}
+
+.app-window {
+  position: absolute;
+  width: min(620px, calc(100% - 30px));
+  min-height: 330px;
+  max-height: 65vh;
+  overflow: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ffffff30;
+  border-radius: 16px;
+  color: white;
+  background: #101e36f2;
+  box-shadow: 0 25px 90px #0009;
+}
+
+.window-titlebar {
+  height: 52px;
+  padding: 0 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ffffff1c;
+}
+
+.window-titlebar button,
+.launcher-heading button {
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 11px;
+  background: #ffffff15;
+  cursor: pointer;
+}
+
+.window-content {
+  padding: 22px;
+}
+
+.window-content h2 {
+  margin-top: 0;
+}
+
+.file-list {
+  display: grid;
+  gap: 10px;
+}
+
+.file-list div {
+  padding: 14px;
+  border-radius: 10px;
+  background: #ffffff0d;
+}
+
+.window-note {
+  margin-top: 22px;
+  color: #9fb3d1;
+  font-size: 12px;
+}
+
+.setting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 13px 0;
+  border-bottom: 1px solid #ffffff1c;
+}
+
+.setting-row p {
+  margin-bottom: 0;
+  color: #a9bbd5;
+  font-size: 13px;
+}
+
+.setting-row button {
+  padding: 10px 13px;
+  color: white;
+  border: 0;
+  border-radius: 9px;
+  background: #087cff;
+  cursor: pointer;
+}
+
+.browser-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.terminal-box {
+  padding: 20px;
+  border-radius: 12px;
+  color: #8effa8;
+  background: #030b12;
+  font-family: monospace;
+}
+
+.calendar-date {
+  padding: 25px;
+  border-radius: 12px;
+  font-size: 23px;
+  background: #ffffff12;
+}
+
+.taskbar {
+  position: absolute;
+  bottom: 13px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(650px, calc(100% - 24px));
+  height: 62px;
+  padding: 0 13px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border: 1px solid #ffffff24;
+  border-radius: 19px;
+  background: rgba(7, 17, 36, 0.82);
+  backdrop-filter: blur(22px);
+  box-shadow: 0 10px 40px #0005;
+}
+
+.taskbar button {
+  border: 0;
+  cursor: pointer;
+}
+
+.launcher-button {
+  background: transparent;
+}
+
+.taskbar-apps {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.taskbar-apps button {
+  width: 39px;
+  height: 39px;
+  border-radius: 11px;
+  font-size: 20px;
+  color: white;
+  background: #ffffff12;
+}
+
+.taskbar-apps button:hover,
+.launcher-button:hover {
+  background: #ffffff24;
+}
+
+.taskbar-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #d5e4fa;
+  font-size: 12px;
+}
+
+.taskbar-clock {
+  font-weight: bold;
+}
+
+.light .desktop-top {
+  background: #ffffff55;
+}
+
+.light .top-status,
+.light .desktop-date {
+  color: #233b60;
+}
+
+@media (max-width: 520px) {
+  .desktop-top {
+    padding: 0 12px;
+  }
+
+  .top-status {
+    gap: 7px;
+    font-size: 11px;
+  }
+
+  .taskbar {
+    gap: 7px;
+    padding: 0 8px;
+  }
+
+  .taskbar-apps {
+    gap: 5px;
+  }
+
+  .taskbar-apps button {
+    width: 34px;
+    height: 36px;
+  }
+
+  .taskbar-right {
+    gap: 6px;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,255 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0B1B3A">
+  <title>NexOS — Downloads & Releases</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #08152e;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #20365c;
+    }
+
+    header a {
+      color: #45b8ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 75px 20px 55px;
+      background: linear-gradient(135deg, #102b55, #08152e);
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      margin: 0 0 15px;
+    }
+
+    .hero h1 span {
+      color: #35aaff;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #bdcce4;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 45px 22px;
+    }
+
+    .notice {
+      padding: 22px;
+      margin-bottom: 35px;
+      border: 1px solid #e0a83b;
+      background: #29243a;
+      border-radius: 12px;
+      color: #f5dfad;
+    }
+
+    .section-title {
+      margin: 40px 0 20px;
+      font-size: 27px;
+    }
+
+    .download-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .download-card {
+      padding: 25px;
+      border: 1px solid #263e65;
+      border-radius: 15px;
+      background: #102344;
+    }
+
+    .download-card h2 {
+      color: #48b7ff;
+      font-size: 21px;
+      margin-top: 0;
+    }
+
+    .download-card p {
+      color: #c2cee2;
+      font-size: 14px;
+    }
+
+    .status {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 6px 12px;
+      border-radius: 20px;
+      background: #34334a;
+      color: #ffd477;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .release-panel {
+      margin-top: 40px;
+      padding: 25px;
+      border: 1px solid #263e65;
+      border-radius: 15px;
+      background: #102344;
+    }
+
+    .release-panel h2 {
+      color: #48b7ff;
+    }
+
+    .release-panel p,
+    .release-panel li {
+      color: #c2cee2;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px 20px;
+      border-top: 1px solid #20365c;
+      color: #91a5c5;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="/">&#8592; Back to NexOS</a>
+  </header>
+
+  <section class="hero">
+    <h1>NexOS <span>Downloads</span></h1>
+    <p>
+      Find your NexOS edition, explore release information,
+      and prepare for future official installation images.
+    </p>
+  </section>
+
+  <main class="container">
+
+    <div class="notice">
+      <strong>Official downloads are not available yet.</strong>
+      <p>
+        NexOS is under development. Installation images
+        will be published after development, hardware
+        testing, and release verification are complete.
+        Do not use unofficial images or erase your existing
+        operating system.
+      </p>
+    </div>
+
+    <h2 class="section-title">Available Edition Plans</h2>
+
+    <div class="download-grid">
+
+      <article class="download-card">
+        <h2>Intel Lite</h2>
+        <p>Planned for selected Celeron, Atom, and Pentium computers.</p>
+        <span class="status">In development</span>
+      </article>
+
+      <article class="download-card">
+        <h2>Intel Edition</h2>
+        <p>Planned for selected Intel Core 3rd–6th generation systems.</p>
+        <span class="status">In development</span>
+      </article>
+
+      <article class="download-card">
+        <h2>Intel Pro</h2>
+        <p>Planned for selected Intel Core 7th–14th generation systems.</p>
+        <span class="status">In development</span>
+      </article>
+
+      <article class="download-card">
+        <h2>Intel Ultra</h2>
+        <p>Future target for selected Intel Core Ultra platforms.</p>
+        <span class="status">Planned</span>
+      </article>
+
+      <article class="download-card">
+        <h2>AMD Edition</h2>
+        <p>Planned for selected AMD Ryzen and Radeon hardware.</p>
+        <span class="status">Planned</span>
+      </article>
+
+      <article class="download-card">
+        <h2>NVIDIA Edition</h2>
+        <p>Planned for selected NVIDIA hardware, subject to driver testing.</p>
+        <span class="status">Planned</span>
+      </article>
+
+      <article class="download-card">
+        <h2>Virtual Machine Edition</h2>
+        <p>Planned x86_64 and ARM virtual machine editions.</p>
+        <span class="status">Planned</span>
+      </article>
+
+      <article class="download-card">
+        <h2>For You Edition</h2>
+        <p>Planned for Chromebooks, Googlebooks, ARM computers, and Microsoft Surface devices.</p>
+        <span class="status">Planned</span>
+      </article>
+
+      <article class="download-card">
+        <h2>Single Board Computer</h2>
+        <p>Planned for selected Raspberry Pi and Orange Pi devices.</p>
+        <span class="status">Planned</span>
+      </article>
+
+    </div>
+
+    <section class="release-panel">
+      <h2>Release Information</h2>
+      <ul>
+        <li>Version: No public release yet</li>
+        <li>Release channel: Not available</li>
+        <li>Installation images: Not available</li>
+        <li>Release notes: Coming soon</li>
+        <li>SHA-256 checksums: Will be published with verified releases</li>
+        <li>Hardware verification: In progress</li>
+      </ul>
+    </section>
+
+    <section class="release-panel">
+      <h2>Future Download Platforms</h2>
+      <p>
+        Official NexOS releases are planned to be distributed
+        through the NexOS website and project repositories.
+      </p>
+      <p>
+        GitHub and GitLab release links will be added
+        when official builds are ready.
+      </p>
+      <span class="status">Coming soon</span>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    NexOS Downloads &amp; Releases Center &copy; 2026
+  </footer>
+
+</body>
+</html>

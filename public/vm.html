@@ -1,0 +1,256 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0B1B3A" />
+  <title>NexOS Virtual Machine Edition</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #17233d;
+      background: #f4f7fc;
+    }
+
+    header {
+      padding: 22px 8%;
+      color: white;
+      background: #0b1b3a;
+    }
+
+    .brand {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 95px 20px 85px;
+      text-align: center;
+      color: white;
+      background:
+        radial-gradient(circle at 50% 20%, #6545b8, transparent 55%),
+        linear-gradient(135deg, #07152d, #0b1b3a);
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 9px 15px;
+      border: 1px solid #ffffff40;
+      border-radius: 30px;
+      color: #d9caff;
+      font-size: 13px;
+    }
+
+    h1 {
+      margin: 24px 0 15px;
+      font-size: clamp(38px, 7vw, 66px);
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: auto;
+      color: #c5d9f5;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 14px 23px;
+      border-radius: 10px;
+      color: white;
+      background: #087cff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: auto;
+      padding: 65px 22px;
+    }
+
+    h2 {
+      margin-bottom: 14px;
+      font-size: 30px;
+    }
+
+    .intro {
+      color: #5c6c85;
+      line-height: 1.8;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .card {
+      padding: 25px;
+      border: 1px solid #e0e8f4;
+      border-radius: 16px;
+      background: white;
+      box-shadow: 0 8px 25px #10264b0b;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #0b1b3a;
+    }
+
+    .card p {
+      color: #64748b;
+      line-height: 1.7;
+    }
+
+    .notice {
+      margin-top: 45px;
+      padding: 25px;
+      border-radius: 14px;
+      color: #164078;
+      background: #e3f1ff;
+      line-height: 1.7;
+    }
+
+    footer {
+      padding: 30px 20px;
+      text-align: center;
+      color: #a9bdd9;
+      background: #0b1b3a;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="brand">NexOS</div>
+  </header>
+
+  <section class="hero">
+    <span class="tag">VIRTUAL MACHINE EDITION</span>
+    <h1>NexOS for VM</h1>
+    <p>
+      Experience NexOS in a virtual machine.
+      Planned editions for x86_64 and ARM64 environments,
+      designed for testing, development, and exploration.
+    </p>
+    <a class="button" href="#features">Explore VM Edition</a>
+  </section>
+
+  <main>
+    <section>
+      <h2>NexOS in a virtual environment</h2>
+      <p class="intro">
+        NexOS for VM is planned for users who want to test
+        NexOS without replacing their existing operating system.
+        Virtual hardware compatibility will depend on the
+        hypervisor and guest architecture.
+      </p>
+    </section>
+
+    <section id="features">
+      <h2>Virtual machine editions</h2>
+
+      <div class="grid">
+        <article class="card">
+          <h3>x86_64 Edition</h3>
+          <p>
+            Planned for compatible Intel and AMD 64-bit
+            virtual machine environments.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>ARM64 Edition</h3>
+          <p>
+            Planned for compatible ARM64 virtualization
+            environments and supported host systems.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Testing environment</h3>
+          <p>
+            Explore the NexOS interface and test supported
+            features without changing your main installation.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Developer friendly</h3>
+          <p>
+            A planned environment for developers to test
+            NexOS builds and application compatibility.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section style="margin-top:45px;">
+      <h2>Planned virtualization platforms</h2>
+
+      <div class="grid">
+        <article class="card">
+          <h3>VirtualBox</h3>
+          <p>
+            Support will be evaluated for compatible
+            VirtualBox host and guest configurations.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>VMware</h3>
+          <p>
+            Compatibility testing is planned for supported
+            VMware virtual machine environments.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Hyper-V</h3>
+          <p>
+            Future testing is planned for compatible
+            Microsoft Hyper-V configurations.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>QEMU</h3>
+          <p>
+            QEMU is a potential platform for x86_64 and
+            ARM64 virtualization testing.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <div class="notice">
+      <strong>Development status:</strong>
+      NexOS for VM is planned and in development.
+      Bootable virtual machine images, architecture support,
+      and hypervisor compatibility have not yet been finalized.
+      No VM download is currently available.
+    </div>
+
+    <p style="margin-top:35px;">
+      <a href="/" style="color:#087cff;text-decoration:none;">
+        ← Back to NexOS
+      </a>
+    </p>
+  </main>
+
+  <footer>
+    © 2026 NexOS Project. All rights reserved.
+    <br><br>
+    Fast. Modern. Open.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08152e">
+  <meta name="description" content="Explore NexOS developer resources, project architecture, development roadmap, and contribution guidelines.">
+  <title>NexOS Developer Center</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #08152e;
+      color: #eef5ff;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #20385e;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      color: #48b7ff;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    a {
+      color: #48b7ff;
+      text-decoration: none;
+    }
+
+    .hero {
+      padding: 75px 8%;
+      text-align: center;
+      background: linear-gradient(135deg, #102c55, #08152e);
+    }
+
+    .eyebrow {
+      color: #48b7ff;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 58px);
+      margin: 15px 0;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: auto;
+      color: #b8c9e2;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 22px;
+    }
+
+    .section-title {
+      margin: 45px 0 20px;
+      font-size: 27px;
+    }
+
+    .developer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .developer-card {
+      background: #102443;
+      border: 1px solid #29466e;
+      border-radius: 14px;
+      padding: 25px;
+    }
+
+    .developer-card h3 {
+      margin-top: 0;
+      color: #ffffff;
+    }
+
+    .developer-card p {
+      color: #bdcce0;
+    }
+
+    .number {
+      color: #48b7ff;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    .status {
+      display: inline-block;
+      background: #493719;
+      color: #ffd27a;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .notice {
+      margin-top: 35px;
+      padding: 22px;
+      background: #132d50;
+      border-left: 4px solid #48b7ff;
+      border-radius: 8px;
+    }
+
+    .notice p {
+      color: #bdcce0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid #20385e;
+      color: #91a5c1;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 55px 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">NexOS</div>
+    <a href="/">← Back to NexOS</a>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow">BUILD THE FUTURE</div>
+    <h1>Developer Center</h1>
+    <p>
+      Explore the NexOS development vision, technical
+      foundation, planned architecture, and ways to
+      contribute to the project.
+    </p>
+  </section>
+
+  <main>
+
+    <h2 class="section-title">Developer Resources</h2>
+
+    <div class="developer-grid">
+
+      <article class="developer-card">
+        <div class="number">01 / FOUNDATION</div>
+        <h3>Source Code Foundation</h3>
+        <p>
+          NexOS is planned around the ChromiumOS
+          open-source foundation. Source integration
+          and platform development are future tasks.
+        </p>
+        <span class="status">In Development</span>
+      </article>
+
+      <article class="developer-card">
+        <div class="number">02 / ARCHITECTURE</div>
+        <h3>System Architecture</h3>
+        <p>
+          Explore the planned desktop environment,
+          system services, hardware support, and
+          application compatibility architecture.
+        </p>
+        <a href="/documentation.html">View Documentation →</a>
+      </article>
+
+      <article class="developer-card">
+        <div class="number">03 / HARDWARE</div>
+        <h3>Hardware Development</h3>
+        <p>
+          Review planned Intel, AMD, NVIDIA, ARM,
+          virtual machine, and single-board computer
+          hardware targets.
+        </p>
+        <a href="/hardware-compatibility.html">
+          Hardware Compatibility →
+        </a>
+      </article>
+
+      <article class="developer-card">
+        <div class="number">04 / APPLICATIONS</div>
+        <h3>Application Development</h3>
+        <p>
+          Learn about planned web, Linux, Android,
+          and Windows application compatibility.
+        </p>
+        <a href="/app-support.html">Application Support →</a>
+      </article>
+
+      <article class="developer-card">
+        <div class="number">05 / ROADMAP</div>
+        <h3>Development Roadmap</h3>
+        <p>
+          Follow planned work on the desktop,
+          installation system, hardware drivers,
+          security, and future releases.
+        </p>
+        <a href="/release-notes.html">View Release Notes →</a>
+      </article>
+
+      <article class="developer-card">
+        <div class="number">06 / CONTRIBUTIONS</div>
+        <h3>Contribute to NexOS</h3>
+        <p>
+          Contribution guidelines, issue tracking,
+          and public development repositories will
+          be published when the project infrastructure
+          is ready.
+        </p>
+        <span class="status">Coming Soon</span>
+      </article>
+
+    </div>
+
+    <h2 class="section-title">Development Environment</h2>
+
+    <article class="developer-card">
+      <h3>Planned Developer Tools</h3>
+      <p>
+        Development will require a suitable Linux
+        environment, source-control tools, build tools,
+        and hardware or virtual machines for testing.
+      </p>
+      <ul>
+        <li>Linux development environment</li>
+        <li>Git version control</li>
+        <li>ChromiumOS source and build tools</li>
+        <li>Virtual machine testing</li>
+        <li>Hardware compatibility testing</li>
+      </ul>
+      <span class="status">Development Setup Not Published</span>
+    </article>
+
+    <div class="notice">
+      <strong>Important Development Notice</strong>
+      <p>
+        NexOS is an early-stage project. This page
+        describes planned development resources.
+        Official source repositories, build instructions,
+        contribution processes, and working OS builds
+        are not publicly available yet.
+      </p>
+    </div>
+
+  </main>
+
+  <footer>
+    © 2026 NexOS Project. All rights reserved.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0B1B3A" />
+  <title>NexOS AMD</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #17233d;
+      background: #f4f7fc;
+    }
+
+    header {
+      padding: 22px 8%;
+      color: white;
+      background: #0b1b3a;
+    }
+
+    .brand {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 95px 20px 85px;
+      text-align: center;
+      color: white;
+      background:
+        radial-gradient(circle at 50% 20%, #a43a32, transparent 55%),
+        linear-gradient(135deg, #07152d, #0b1b3a);
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 9px 15px;
+      border: 1px solid #ffffff40;
+      border-radius: 30px;
+      color: #ffd0c9;
+      font-size: 13px;
+    }
+
+    h1 {
+      margin: 24px 0 15px;
+      font-size: clamp(38px, 7vw, 66px);
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #c5d9f5;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 14px 23px;
+      border-radius: 10px;
+      color: white;
+      background: #087cff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: auto;
+      padding: 65px 22px;
+    }
+
+    h2 {
+      margin-bottom: 14px;
+      font-size: 30px;
+    }
+
+    .intro {
+      color: #5c6c85;
+      line-height: 1.8;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .card {
+      padding: 25px;
+      border: 1px solid #e0e8f4;
+      border-radius: 16px;
+      background: white;
+      box-shadow: 0 8px 25px #10264b0b;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #0b1b3a;
+    }
+
+    .card p {
+      color: #64748b;
+      line-height: 1.7;
+    }
+
+    .notice {
+      margin-top: 45px;
+      padding: 25px;
+      border-radius: 14px;
+      color: #164078;
+      background: #e3f1ff;
+      line-height: 1.7;
+    }
+
+    footer {
+      padding: 30px 20px;
+      text-align: center;
+      color: #a9bdd9;
+      background: #0b1b3a;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="brand">NexOS</div>
+  </header>
+
+  <section class="hero">
+    <span class="tag">AMD EDITION</span>
+    <h1>NexOS AMD</h1>
+    <p>
+      A planned NexOS edition for selected AMD Ryzen
+      processors and Radeon graphics systems.
+      Built with performance, flexibility, and compatibility in mind.
+    </p>
+    <a class="button" href="#features">Explore AMD</a>
+  </section>
+
+  <main>
+    <section>
+      <h2>Designed for AMD systems</h2>
+      <p class="intro">
+        NexOS AMD aims to support selected desktop and laptop
+        systems powered by AMD processors. Hardware support
+        will depend on the exact CPU, GPU, firmware, and
+        connected components.
+      </p>
+    </section>
+
+    <section id="features">
+      <h2>Edition highlights</h2>
+
+      <div class="grid">
+        <article class="card">
+          <h3>AMD Ryzen support</h3>
+          <p>
+            Planned compatibility with selected AMD Ryzen
+            desktop and mobile processors.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Radeon graphics</h3>
+          <p>
+            Planned support for selected integrated and
+            dedicated AMD Radeon graphics hardware.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Linux applications</h3>
+          <p>
+            Linux application support is planned, subject to
+            software and hardware compatibility.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Modern desktop</h3>
+          <p>
+            A clean NexOS desktop experience for work,
+            entertainment, and everyday computing.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <div class="notice">
+      <strong>Development status:</strong>
+      NexOS AMD is planned and in development.
+      CPU, graphics, Wi-Fi, Bluetooth, and other hardware
+      compatibility must be validated before release.
+      No installation image is currently available.
+    </div>
+
+    <p style="margin-top:35px;">
+      <a href="/" style="color:#087cff;text-decoration:none;">
+        ← Back to NexOS
+      </a>
+    </p>
+  </main>
+
+  <footer>
+    © 2026 NexOS Project. All rights reserved.
+    <br><br>
+    Fast. Modern. Open.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0B1B3A">
+  <title>NexOS Installation Guide</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #08152e;
+      color: #f5f8ff;
+    }
+
+    header {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #203657;
+    }
+
+    .brand {
+      font-size: 25px;
+      font-weight: bold;
+      color: #55baff;
+    }
+
+    a {
+      color: #62baff;
+      text-decoration: none;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 75px 20px 45px;
+    }
+
+    .eyebrow {
+      color: #39baff;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: clamp(35px, 6vw, 55px);
+      margin: 18px 0;
+    }
+
+    h1 span {
+      color: #48aaff;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: auto;
+      color: #aabbd3;
+      line-height: 1.8;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 20px auto 70px;
+      padding: 0 22px;
+    }
+
+    .step {
+      padding: 27px;
+      margin-bottom: 20px;
+      background: #102342;
+      border: 1px solid #243e62;
+      border-radius: 15px;
+    }
+
+    .step h2 {
+      margin-top: 0;
+      font-size: 21px;
+    }
+
+    .step p, .step li {
+      color: #b3c3d9;
+      line-height: 1.8;
+    }
+
+    .step ul {
+      padding-left: 22px;
+    }
+
+    .edition-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .edition {
+      padding: 20px;
+      background: #142d50;
+      border-radius: 12px;
+    }
+
+    .edition h3 {
+      color: #69baff;
+      margin-top: 0;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 20px;
+      background: #193c60;
+      color: #80caff;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .warning {
+      padding: 25px;
+      margin-top: 25px;
+      background: #332b1c;
+      border: 1px solid #80652e;
+      border-radius: 13px;
+      color: #f3d99c;
+      line-height: 1.8;
+    }
+
+    footer {
+      padding: 28px;
+      text-align: center;
+      border-top: 1px solid #203657;
+      color: #8296b3;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="brand">NexOS</div>
+    <a href="/">← Back to homepage</a>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow">NEXOS DOCUMENTATION</div>
+    <h1>Installation <span>Guide</span></h1>
+    <p>
+      Learn about the planned NexOS installation process,
+      hardware preparation, bootable USB requirements,
+      and supported platform families.
+    </p>
+  </section>
+
+  <main class="content">
+
+    <section class="step">
+      <h2>Step 1 — Check your hardware</h2>
+      <p>
+        Before installing NexOS, your device must match
+        a supported hardware edition.
+      </p>
+      <ul>
+        <li>Identify your processor and graphics hardware.</li>
+        <li>Check your device architecture.</li>
+        <li>Verify storage, memory, Wi-Fi, and boot compatibility.</li>
+        <li>Check the official compatibility list when available.</li>
+      </ul>
+    </section>
+
+    <section class="step">
+      <h2>Step 2 — Prepare installation media</h2>
+      <p>
+        The planned installation process will use a verified
+        NexOS image and a USB drive.
+      </p>
+      <ul>
+        <li>Obtain an official NexOS installation image.</li>
+        <li>Verify its published checksum.</li>
+        <li>Use a compatible USB imaging utility.</li>
+        <li>Prepare a USB drive with sufficient capacity.</li>
+      </ul>
+      <span class="status">Tools and images coming soon</span>
+    </section>
+
+    <section class="step">
+      <h2>Step 3 — Select your NexOS edition</h2>
+
+      <div class="edition-grid">
+        <div class="edition">
+          <h3>Intel Editions</h3>
+          <p>Intel Lite, Intel, Intel Pro, and Intel Ultra.</p>
+          <span class="status">Planned</span>
+        </div>
+
+        <div class="edition">
+          <h3>AMD Edition</h3>
+          <p>Selected AMD processors and Radeon hardware.</p>
+          <span class="status">Planned</span>
+        </div>
+
+        <div class="edition">
+          <h3>NVIDIA Edition</h3>
+          <p>Selected NVIDIA platforms requiring hardware validation.</p>
+          <span class="status">Planned</span>
+        </div>
+
+        <div class="edition">
+          <h3>Virtual Machine</h3>
+          <p>Virtual machine editions for x86_64 and ARM64.</p>
+          <span class="status">Planned</span>
+        </div>
+
+        <div class="edition">
+          <h3>SBC Edition</h3>
+          <p>Selected Raspberry Pi, Orange Pi, and other boards.</p>
+          <span class="status">Planned</span>
+        </div>
+
+        <div class="edition">
+          <h3>For You Edition</h3>
+          <p>Selected Chromebooks, ARM computers, and Surface devices.</p>
+          <span class="status">Planned</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="step">
+      <h2>Step 4 — Boot and install</h2>
+      <p>
+        Once official NexOS images and an installer are available,
+        this section will explain how to boot from USB,
+        test hardware, and complete installation.
+      </p>
+      <span class="status">Instructions coming soon</span>
+    </section>
+
+    <section class="step">
+      <h2>Step 5 — Complete initial setup</h2>
+      <p>
+        The planned first-run setup will guide users through
+        network configuration, account setup, privacy options,
+        and system preferences.
+      </p>
+      <span class="status">In development</span>
+    </section>
+
+    <div class="warning">
+      <strong>Important development notice</strong>
+      <br>
+      NexOS is not currently available as a bootable operating
+      system. These are planned installation stages, not
+      instructions for installing a working release. Do not
+      erase or modify your computer's drive expecting to
+      install NexOS yet.
+    </div>
+
+  </main>
+
+  <footer>
+    © 2026 NexOS Project. All rights reserved.
+  </footer>
+
+</body>
+</html>

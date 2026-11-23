@@ -1,0 +1,223 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0B1B3A">
+  <title>NexOS Troubleshooting Center</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #08152e;
+      color: #f5f8ff;
+    }
+
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #203657;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      color: #55baff;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    a {
+      color: #9ecfff;
+      text-decoration: none;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 75px 20px 45px;
+    }
+
+    .eyebrow {
+      color: #39baff;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: clamp(34px, 6vw, 54px);
+      margin: 18px 0;
+    }
+
+    h1 span {
+      color: #48aaff;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #aabbd3;
+      line-height: 1.8;
+    }
+
+    .trouble-grid {
+      max-width: 1100px;
+      margin: 20px auto 70px;
+      padding: 0 22px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
+    .trouble-card {
+      padding: 26px;
+      border: 1px solid #243e62;
+      border-radius: 16px;
+      background: #102342;
+    }
+
+    .trouble-card h2 {
+      font-size: 19px;
+    }
+
+    .trouble-card p {
+      color: #aabbd3;
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    .status {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 7px 12px;
+      border-radius: 20px;
+      background: #193c60;
+      color: #80caff;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .notice {
+      max-width: 1056px;
+      margin: 0 auto 70px;
+      padding: 25px;
+      border: 1px solid #28517c;
+      border-radius: 15px;
+      background: #102342;
+      color: #c5d5e9;
+      line-height: 1.7;
+    }
+
+    footer {
+      padding: 28px;
+      text-align: center;
+      border-top: 1px solid #203657;
+      color: #8296b3;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="brand">NexOS</div>
+    <a href="/support-center.html">&#8592; Back to Support Center</a>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow">NEXOS HELP CENTER</div>
+    <h1>Troubleshooting <span>Center</span></h1>
+    <p>
+      Find information about common NexOS problems
+      and learn where troubleshooting guidance
+      will be published as development progresses.
+    </p>
+  </section>
+
+  <main class="trouble-grid">
+
+    <article class="trouble-card">
+      <h2>01 — Boot Problems</h2>
+      <p>
+        Information about startup failures, boot errors,
+        and bootable USB troubleshooting.
+      </p>
+      <span class="status">Guide planned</span>
+    </article>
+
+    <article class="trouble-card">
+      <h2>02 — Wi-Fi &amp; Networking</h2>
+      <p>
+        Planned guidance for wireless connections,
+        Ethernet, and network configuration.
+      </p>
+      <span class="status">Guide planned</span>
+    </article>
+
+    <article class="trouble-card">
+      <h2>03 — Graphics &amp; Display</h2>
+      <p>
+        Planned information about display detection,
+        resolution, graphics drivers, and screen issues.
+      </p>
+      <span class="status">Guide planned</span>
+    </article>
+
+    <article class="trouble-card">
+      <h2>04 — Storage &amp; Installation</h2>
+      <p>
+        Planned help for storage detection,
+        installation errors, and disk compatibility.
+      </p>
+      <span class="status">Guide planned</span>
+    </article>
+
+    <article class="trouble-card">
+      <h2>05 — Audio Problems</h2>
+      <p>
+        Planned guidance for sound output,
+        microphone detection, and audio configuration.
+      </p>
+      <span class="status">Guide planned</span>
+    </article>
+
+    <article class="trouble-card">
+      <h2>06 — System Updates</h2>
+      <p>
+        Information about planned update errors,
+        maintenance, and system recovery.
+      </p>
+      <span class="status">Guide planned</span>
+    </article>
+
+  </main>
+
+  <section class="notice">
+    <strong>NexOS is currently under development.</strong>
+    <p>
+      These troubleshooting topics are planned documentation.
+      NexOS is not yet a public bootable operating system,
+      and verified troubleshooting procedures are not
+      currently available.
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2026 NexOS Project. All rights reserved.
+  </footer>
+
+</body>
+</html>

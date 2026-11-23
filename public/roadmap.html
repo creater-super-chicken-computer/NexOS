@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0B1B3A">
+  <title>NexOS Development Roadmap</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #08152e;
+      color: #ffffff;
+    }
+
+    header {
+      padding: 22px 8%;
+      background: #0b1b3a;
+      border-bottom: 1px solid #203b60;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    header span {
+      color: #35aaff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 65px 20px 45px;
+    }
+
+    .hero small {
+      color: #39aaff;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin: 15px 0;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: auto;
+      color: #aabbd3;
+      line-height: 1.8;
+    }
+
+    .roadmap {
+      max-width: 900px;
+      margin: 0 auto 80px;
+      padding: 0 22px;
+    }
+
+    .phase {
+      position: relative;
+      padding: 27px;
+      margin-bottom: 20px;
+      background: #102342;
+      border: 1px solid #243e62;
+      border-radius: 16px;
+    }
+
+    .phase-number {
+      color: #43adff;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .phase h2 {
+      font-size: 21px;
+      margin: 12px 0;
+    }
+
+    .phase p {
+      color: #b4c5dc;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .phase ul {
+      color: #b4c5dc;
+      font-size: 14px;
+      line-height: 2;
+      padding-left: 20px;
+    }
+
+    .status {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 7px 12px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .completed {
+      color: #7de5b0;
+      background: rgba(50, 200, 130, 0.12);
+      border: 1px solid rgba(50, 200, 130, 0.3);
+    }
+
+    .progress {
+      color: #76c5ff;
+      background: rgba(50, 150, 255, 0.12);
+      border: 1px solid rgba(50, 150, 255, 0.3);
+    }
+
+    .planned {
+      color: #ffd27a;
+      background: rgba(255, 190, 60, 0.12);
+      border: 1px solid rgba(255, 190, 60, 0.3);
+    }
+
+    .notice {
+      max-width: 900px;
+      margin: 0 auto 60px;
+      padding: 25px;
+      background: #132b4c;
+      border: 1px solid #2b527e;
+      border-radius: 14px;
+    }
+
+    .notice strong {
+      color: #58baff;
+    }
+
+    .notice p {
+      color: #b4c5dc;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid #203b60;
+      color: #8196b2;
+      font-size: 13px;
+    }
+
+    footer a {
+      color: #58baff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .phase {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="/">Nex<span>OS</span></a>
+  </header>
+
+  <section class="hero">
+    <small>NEXOS PROJECT</small>
+    <h1>Development Roadmap</h1>
+    <p>
+      Explore the development goals and planned milestones
+      for NexOS, from the website foundation to future
+      operating system releases.
+    </p>
+  </section>
+
+  <main class="roadmap">
+
+    <article class="phase">
+      <div class="phase-number">PHASE 01</div>
+      <h2>Website &amp; Project Foundation</h2>
+      <p>
+        Establish the NexOS identity, project website,
+        support resources, and initial development plans.
+      </p>
+      <ul>
+        <li>NexOS branding and homepage</li>
+        <li>Edition information pages</li>
+        <li>Support Center and documentation pages</li>
+        <li>FAQ and project information</li>
+      </ul>
+      <span class="status completed">WEBSITE FOUNDATION COMPLETED</span>
+    </article>
+
+    <article class="phase">
+      <div class="phase-number">PHASE 02</div>
+      <h2>Desktop Interface Prototype</h2>
+      <p>
+        Develop and refine the visual desktop experience
+        and explore the core interface design.
+      </p>
+      <ul>
+        <li>Desktop interface concept</li>
+        <li>Window and application layout exploration</li>
+        <li>Taskbar and launcher design</li>
+        <li>Interface improvements and testing</li>
+      </ul>
+      <span class="status progress">PROTOTYPE BUILT — FURTHER WORK PLANNED</span>
+    </article>
+
+    <article class="phase">
+      <div class="phase-number">PHASE 03</div>
+      <h2>ChromiumOS Foundation</h2>
+      <p>
+        Investigate and establish the technical foundation
+        for a NexOS operating system based on ChromiumOS.
+      </p>
+      <ul>
+        <li>Review ChromiumOS source and build requirements</li>
+        <li>Establish a reproducible build environment</li>
+        <li>Explore NexOS system customization</li>
+        <li>Plan system security and update architecture</li>
+      </ul>
+      <span class="status planned">PLANNED</span>
+    </article>
+
+    <article class="phase">
+      <div class="phase-number">PHASE 04</div>
+      <h2>Hardware &amp; Driver Compatibility</h2>
+      <p>
+        Investigate hardware support and validate devices
+        through development builds and testing.
+      </p>
+      <ul>
+        <li>Selected Intel and AMD platforms</li>
+        <li>Selected NVIDIA and ARM platforms</li>
+        <li>Graphics, networking, audio, and storage drivers</li>
+        <li>Virtual machine and single-board computer testing</li>
+      </ul>
+      <span class="status planned">PLANNED</span>
+    </article>
+
+    <article class="phase">
+      <div class="phase-number">PHASE 05</div>
+      <h2>Application Compatibility</h2>
+      <p>
+        Research additional application environments
+        and compatibility technologies.
+      </p>
+      <ul>
+        <li>Linux application support</li>
+        <li>Android application compatibility research</li>
+        <li>Windows application compatibility through Wine or Proton</li>
+        <li>Web applications and app distribution</li>
+      </ul>
+      <span class="status planned">PLANNED</span>
+    </article>
+
+    <article class="phase">
+      <div class="phase-number">PHASE 06</div>
+      <h2>Testing &amp; First Public Release</h2>
+      <p>
+        Prepare NexOS for public testing after the
+        technical foundation and hardware validation
+        have progressed sufficiently.
+      </p>
+      <ul>
+        <li>Internal development builds</li>
+        <li>Installation and recovery testing</li>
+        <li>Security and stability testing</li>
+        <li>Release documentation and verified downloads</li>
+      </ul>
+      <span class="status planned">PLANNED</span>
+    </article>
+
+    <section class="notice">
+      <strong>Important: Roadmap information</strong>
+      <p>
+        This roadmap describes development goals, not guaranteed
+        release dates. Features, hardware targets, and project
+        priorities may change as development progresses.
+        NexOS is under development and no public bootable
+        installation image is currently available.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 NexOS Project. All rights reserved.</p>
+    <p>
+      <a href="/">Home</a> |
+      <a href="/support-center.html">Support Center</a> |
+      <a href="/downloads.html">Downloads</a>
+    </p>
+  </footer>
+
+</body>
+</html>
